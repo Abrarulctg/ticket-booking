@@ -154,21 +154,16 @@
         // plus button Event handler for First Class
         const quantityIncrement = document.getElementById('quantity-increment-first');
         quantityIncrement.addEventListener('click', function () {
-
             const ticketNumber = getTicketQuantity('ticket-quantity-first');
-
             document.getElementById('ticket-quantity-first').value = ticketNumber + 1;
             document.getElementById('quantity-decrement-first').disabled = false;
 
             // Calculating Total
             const subTotal = document.getElementById('sub-total').innerText;
             const subTotalNumber = parseFloat(subTotal);
-
             const updatedSubTotal = document.getElementById('sub-total').innerText = subTotalNumber + 150;
-
             const taxAmount = updatedSubTotal * 0.1;
             document.getElementById('tax-amount').innerText = taxAmount;
-
             document.getElementById('total').innerText = updatedSubTotal + taxAmount;
         });
 
@@ -176,23 +171,17 @@
         // Minus Button Event Handler for First Class
         const quantityDecrement = document.getElementById('quantity-decrement-first');
         quantityDecrement.addEventListener('click', function () {
-
             const ticketNumber = getTicketQuantity('ticket-quantity-first');
-
             const updatedTicketQuantity = document.getElementById('ticket-quantity-first').value = ticketNumber - 1;
             if (updatedTicketQuantity < 1) {
                 document.getElementById('quantity-decrement-first').disabled = true;
             }
-
+            // Calculating Total
             const subTotal = document.getElementById('sub-total').innerText;
             const subTotalNumber = parseFloat(subTotal);
-
             const updatedSubTotal = document.getElementById('sub-total').innerText = subTotalNumber - 150;
-
-            //console.log(updatedSubTotal);
             const taxAmount = updatedSubTotal * 0.1;
             document.getElementById('tax-amount').innerText = taxAmount;
-
             document.getElementById('total').innerText = updatedSubTotal + taxAmount;
         })
 
@@ -200,56 +189,35 @@
         // plus button Event handler for Economy Class
         const quantityIncrementEconomy = document.getElementById('quantity-increment-economy');
         quantityIncrementEconomy.addEventListener('click', function () {
-
             const ticketNumber = getTicketQuantity('ticket-quantity-economy');
-
             document.getElementById('ticket-quantity-economy').value = ticketNumber + 1;
             document.getElementById('quantity-decrement-economy').disabled = false;
-
             // Calculating Total
             const subTotal = document.getElementById('sub-total').innerText;
             const subTotalNumber = parseFloat(subTotal);
-
             const updatedSubTotal = document.getElementById('sub-total').innerText = subTotalNumber + 100;
-
             const taxAmount = updatedSubTotal * 0.1;
             document.getElementById('tax-amount').innerText = taxAmount;
-
             document.getElementById('total').innerText = updatedSubTotal + taxAmount;
         });
-
-
 
 
         // Minus Button Event Handler for Economy Class
         const quantityDecrementEconomy = document.getElementById('quantity-decrement-economy');
         quantityDecrementEconomy.addEventListener('click', function () {
-
             const ticketNumber = getTicketQuantity('ticket-quantity-economy');
-
             const updatedTicketQuantity = document.getElementById('ticket-quantity-economy').value = ticketNumber - 1;
             if (updatedTicketQuantity < 1) {
                 document.getElementById('quantity-decrement-economy').disabled = true;
             }
-
+            // Calculating Total
             const subTotal = document.getElementById('sub-total').innerText;
             const subTotalNumber = parseFloat(subTotal);
-
             const updatedSubTotal = document.getElementById('sub-total').innerText = subTotalNumber - 100;
-
-            //console.log(updatedSubTotal);
             const taxAmount = updatedSubTotal * 0.1;
             document.getElementById('tax-amount').innerText = taxAmount;
-
             document.getElementById('total').innerText = updatedSubTotal + taxAmount;
         })
-
-
-
-        // Function for Calculate Total
-        function calculateTotal() {
-
-        }
 
 
         // Function for get Ticket Quantity
@@ -260,15 +228,11 @@
         }
 
 
-
-
         // handle book now button
         const bookNowBtn = document.getElementById('book-now');
         bookNowBtn.addEventListener('click', function () {
             const grandTotal = document.getElementById('total').innerText;
             const grandTotalNumber = parseFloat(grandTotal);
-            //console.log(grandTotalNumber);
-
 
             // checking grandTotal. if grandTotal is > 0 then, the booking content will be hidden & will be display thanks message
             if (grandTotalNumber > 0) {
@@ -287,7 +251,6 @@
                 alert("Please select First or Economy class");
             }
         });
-
 
     </script>
 </body>
