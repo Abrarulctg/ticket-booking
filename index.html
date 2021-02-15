@@ -21,6 +21,7 @@
     <header class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
+                <a href="" class="navbar-brand text-white ">Cruise Queen</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +30,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                            <a class="nav-link " aria-current="page" href="">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
@@ -46,118 +47,118 @@
     </header>
 
     <!--Booking Section-->
-    <main class="container mt-4 booking-content">
+    <main class="container mt-4" id="booking-content">
         <div class="row">
             <div class="col-md-6 booking-description d-flex align-items-center">
                 <div>
                     <h1>Cruise Queen</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book.
-                </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and
+                        scrambled it to make a type specimen book.
+                    </p>
                 </div>
             </div>
 
             <div class="col-md-5 booking-form p-4 mb-5">
-                    <div class="col-12">
-                        <h3>Book Ocean Time</h3>
-                        <div class="input-group">
-                            <label for="">Flying From</label>
-                            <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
-                        </div>
-                        <div class="input-group">
-                            <label for="">Flying To</label>
-                            <input class="inp-style" type="text" name="" placeholder="New York, United States">
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <label" for="">Departure</label>
-                                    <input class="inp-style" type="date" name="">
-                            </div>
-                            <div class="col-6">
-                                <label for="">Return</label>
-                                <input class="inp-style" type="date" name="">
-                            </div>
-                        </div>
-
-                        <div class="row mt-3">
-                            <label for="">First Class ($150)</label>
-                            <div class="d-flex">
-                                <input class="form-control" type="number" name="" id="ticket-quantity-first" value="0">
-                                <div class="d-flex">
-                                    <button class="btn" id="quantity-decrement-first" disabled='true'><i
-                                            class="fas fa-minus"></i></button>
-                                    <button class="btn" id="quantity-increment-first"><i
-                                            class="fas fa-plus"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <label for="">Economy ($100)</label>
-                            <div class="d-flex">
-                                <input class="form-control" type="number" name="" id="ticket-quantity-economy"
-                                    value="0">
-                                <div class="d-flex">
-                                    <button class="btn" id="quantity-decrement-economy" disabled="true"><i
-                                            class="fas fa-minus"></i></button>
-                                    <button class="btn" id="quantity-increment-economy"><i
-                                            class="fas fa-plus"></i></button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="calculations mt-3">
-                            <div class="amount">
-                                <div class="left">
-                                    <p>Subtotal</p>
-                                </div>
-                                <div class="right">
-                                    <p>$<span id="sub-total">00</span></p>
-                                </div>
-                            </div>
-
-                            <div class="amount">
-                                <div class="left">
-                                    <p>Charge 10% VAT</p>
-                                </div>
-                                <div class="right">
-                                    <p>$<span id="tax-amount">00</span></p>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="amount">
-                                <div class="left">
-                                    <h4>Total</h4>
-                                </div>
-                                <div class="right">
-                                    <p>$<span id="total">00</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn-style" id="book-now">Book Now</button>
+                <div class="col-12">
+                    <h3>Book Ocean Time</h3>
+                    <div class="input-group">
+                        <label for="">Flying From</label>
+                        <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
                     </div>
+                    <div class="input-group">
+                        <label for="">Flying To</label>
+                        <input class="inp-style" type="text" name="" placeholder="New York, United States">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label" for="">Departure</label>
+                                <input class="inp-style" type="date" name="">
+                        </div>
+                        <div class="col-6">
+                            <label for="">Return</label>
+                            <input class="inp-style" type="date" name="">
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <label for="">First Class ($150)</label>
+                        <div class="d-flex">
+                            <input class="form-control" type="number" name="" id="ticket-quantity-first" value="0">
+                            <div class="d-flex">
+                                <button class="btn" id="quantity-decrement-first" disabled='true'><i
+                                        class="fas fa-minus"></i></button>
+                                <button class="btn" id="quantity-increment-first"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="">Economy ($100)</label>
+                        <div class="d-flex">
+                            <input class="form-control" type="number" name="" id="ticket-quantity-economy" value="0">
+                            <div class="d-flex">
+                                <button class="btn" id="quantity-decrement-economy" disabled="true"><i
+                                        class="fas fa-minus"></i></button>
+                                <button class="btn" id="quantity-increment-economy"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculations mt-3">
+                        <div class="amount">
+                            <div class="left">
+                                <p>Subtotal</p>
+                            </div>
+                            <div class="right">
+                                <p>$<span id="sub-total">00</span></p>
+                            </div>
+                        </div>
+
+                        <div class="amount">
+                            <div class="left">
+                                <p>Charge 10% VAT</p>
+                            </div>
+                            <div class="right">
+                                <p>$<span id="tax-amount">00</span></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <div class="left">
+                                <h4>Total</h4>
+                            </div>
+                            <div class="right">
+                                <p>$<span id="total">00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-style" id="book-now">Book Now</button>
+                </div>
             </div>
         </div>
 
     </main>
 
-    <div class="p-5 thank-message">
-        <h1>Thanks for your booking!</h1>
-        <h3>Your Booking Id is : </h3>
+    <div class="p-5 thank-message" id="thank-message">
+        <div class="text-center mt-5">
+            <h1>Thanks for your booking!</h1>
+            <h3>Your Booking ID is : <span class="orderid">#<span id="order-id"></span></span></h3>
+        </div>
     </div>
 
     <!--Thank You-->
     <script>
-        // plus button Event handler
+        // plus button Event handler for First Class
         const quantityIncrement = document.getElementById('quantity-increment-first');
         quantityIncrement.addEventListener('click', function () {
-            const ticketQuantity = document.getElementById('ticket-quantity-first').value;
-            const ticketNumber = parseFloat(ticketQuantity);
+
+            const ticketNumber = getTicketQuantity('ticket-quantity-first');
 
             document.getElementById('ticket-quantity-first').value = ticketNumber + 1;
             document.getElementById('quantity-decrement-first').disabled = false;
-
 
             // Calculating Total
             const subTotal = document.getElementById('sub-total').innerText;
@@ -172,11 +173,11 @@
         });
 
 
-        // Minus Button Event Handler
+        // Minus Button Event Handler for First Class
         const quantityDecrement = document.getElementById('quantity-decrement-first');
         quantityDecrement.addEventListener('click', function () {
-            const ticketQuantity = document.getElementById('ticket-quantity-first').value;
-            const ticketNumber = parseFloat(ticketQuantity);
+
+            const ticketNumber = getTicketQuantity('ticket-quantity-first');
 
             const updatedTicketQuantity = document.getElementById('ticket-quantity-first').value = ticketNumber - 1;
             if (updatedTicketQuantity < 1) {
@@ -196,15 +197,14 @@
         })
 
 
-        // plus button Event handler
+        // plus button Event handler for Economy Class
         const quantityIncrementEconomy = document.getElementById('quantity-increment-economy');
         quantityIncrementEconomy.addEventListener('click', function () {
-            const ticketQuantity = document.getElementById('ticket-quantity-economy').value;
-            const ticketNumber = parseFloat(ticketQuantity);
+
+            const ticketNumber = getTicketQuantity('ticket-quantity-economy');
 
             document.getElementById('ticket-quantity-economy').value = ticketNumber + 1;
             document.getElementById('quantity-decrement-economy').disabled = false;
-
 
             // Calculating Total
             const subTotal = document.getElementById('sub-total').innerText;
@@ -221,11 +221,11 @@
 
 
 
-        // Minus Button Event Handler
+        // Minus Button Event Handler for Economy Class
         const quantityDecrementEconomy = document.getElementById('quantity-decrement-economy');
         quantityDecrementEconomy.addEventListener('click', function () {
-            const ticketQuantity = document.getElementById('ticket-quantity-economy').value;
-            const ticketNumber = parseFloat(ticketQuantity);
+
+            const ticketNumber = getTicketQuantity('ticket-quantity-economy');
 
             const updatedTicketQuantity = document.getElementById('ticket-quantity-economy').value = ticketNumber - 1;
             if (updatedTicketQuantity < 1) {
@@ -234,6 +234,7 @@
 
             const subTotal = document.getElementById('sub-total').innerText;
             const subTotalNumber = parseFloat(subTotal);
+
             const updatedSubTotal = document.getElementById('sub-total').innerText = subTotalNumber - 100;
 
             //console.log(updatedSubTotal);
@@ -252,19 +253,40 @@
 
 
         // Function for get Ticket Quantity
-        // function getTicketQuantity(id) {
-        //     const ticketQuantity = document.getElementById(id).value;
-        //     const ticketNumber = parseFloat(ticketQuantity);
-        //     const updateTicketQuantity = document.getElementById(id).value = ticketNumber + 1;
-        //     return updateTicketQuantity;
-        // }
+        function getTicketQuantity(id) {
+            const ticketQuantity = document.getElementById(id).value;
+            const ticketQuantityNumber = parseFloat(ticketQuantity);
+            return ticketQuantityNumber;
+        }
 
 
 
 
         // handle book now button
         const bookNowBtn = document.getElementById('book-now');
-        
+        bookNowBtn.addEventListener('click', function () {
+            const grandTotal = document.getElementById('total').innerText;
+            const grandTotalNumber = parseFloat(grandTotal);
+            //console.log(grandTotalNumber);
+
+
+            // checking grandTotal. if grandTotal is > 0 then, the booking content will be hidden & will be display thanks message
+            if (grandTotalNumber > 0) {
+                // hiding booking-content section
+                const bookingContent = document.getElementById('booking-content');
+                bookingContent.style.display = "none";
+
+                // displaying thanks message
+                const thanksMessage = document.getElementById('thank-message');
+                thanksMessage.style.display = "block";
+                const orderId = 123456;
+                const orderNumber = Math.round(Math.random() * 1000000);
+                document.getElementById('order-id').innerText = orderNumber;
+            }
+            else {
+                alert("Please select First or Economy class");
+            }
+        });
 
 
     </script>
