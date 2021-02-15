@@ -13,45 +13,27 @@ body{
     background-attachment: scroll;
     background-size: cover;
 }
-nav{
-    height: 50px;
-    width: 100%;
-    padding: 20px 0;
-}
-.container{
-    width: 1200px;
-    max-width: 85%;
-    margin: 0 auto;
-}
-nav ul{
-    display: flex;
-    justify-content: flex-start;
-    margin: 0px 6px;
-}
-nav ul li a{
-    color: #fff;
-    padding: 10px;
-    text-transform: uppercase;
+.nav-item{
     margin-left: 30px;
 }
-nav ul li a:hover, a.active{
+
+.nav-item > a{
+    color: #fff !important;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.nav-item:hover, a.active{
     background-color: #E33741;
     color: #fff;
     border-radius: 5px;
+    text-decoration: none;
 }
-.main-content{
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    gap: 70px;
-    align-items: center;
-}
-.booking-content{
+
+.booking-description{
     color: #fff;
-    width: 100%;
-    float: left;
-    margin-left: 50px;
 }
-.booking-content h1{
+.booking-description h1{
     font-size: 70px;
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
@@ -62,22 +44,20 @@ nav ul li a:hover, a.active{
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
-    float: right;
-    width: 65%;
-    margin-left: 180px;
+    margin-left: 20px;
 }
 .booking-form h3{
     margin: 10px 0px;
 }
 .booking-form  .input-group{
-    margin: 10px 0;
+    margin: 5px 0;
 }
 .booking-form  .calculations{
     margin: 10px 0;
 }
 .booking-form  .calculations p{
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 .booking-form input{
     width: 100%;
@@ -87,7 +67,7 @@ nav ul li a:hover, a.active{
     border: none;
     background: #F3F5FF;
     border-radius: 4px;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 .f-class{
     display: flex;
@@ -122,4 +102,10 @@ nav ul li a:hover, a.active{
 .amount{
     display: flex;
     justify-content: space-between;
+}
+
+.thank-message{
+    background-color: rgba(78, 78, 78, 0.568);
+    color: #fff;
+    display: none;
 }
